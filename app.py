@@ -145,8 +145,18 @@ def assam():
 def arunachal():
     return render_template('arunachal.html')
 
-
-
+@app.route('/subscribe',methods=['post'])
+def subscribe():
+    email = request.form['email']
+    emsg = """Subject: Subcription email\n
+    Thanks for subscribeing for our service.
+    """
+    server = smtplib.SMTP('smtp.gmail.com',587)
+    server.starttls()
+    server.login(sender_email,sender_pass)
+    server.sendmail(sender_email,email,emsg)
+    server.quit()
+    return render_template('index.html')
 @app.route('/gujarat')
 def gujarath():
     return render_template('gujarat.html')
