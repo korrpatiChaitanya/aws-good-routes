@@ -8,7 +8,6 @@ cluster = MongoClient('mongodb+srv://korrapatichaitanya5:chay@cluster0.x9t9zgx.m
 db = cluster['goods']
 userinfo = db['usersinfo']
 
-server = smtplib.SMTP('smtp.gmail.com',587)
 sender_email = 'korrapatichaitanya5@gmail.com'
 sender_pass = 'zgrfbllzmlscvcwv'
 
@@ -63,6 +62,8 @@ def bookTransport():
     Crop : {5}.
 
     """.format(farmerName,email,area,date,reason,crop)
+    server = smtplib.SMTP('smtp.gmail.com',587)
+
     server.starttls()
     server.login(sender_email,sender_pass)
     server.sendmail(sender_email,email,usermsg)
@@ -87,6 +88,8 @@ def docontact():
     Phone : {2} \n
     Message : {3}.
     """.format(email,name,phone,message)
+    server = smtplib.SMTP('smtp.gmail.com',587)
+
     userinfo.insert_one({'name':name,'email':email,"phone":phone,"message":message})
     server.starttls()
     server.login(sender_email,sender_pass)
