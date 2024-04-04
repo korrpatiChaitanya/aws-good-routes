@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prakasam District</title>
+    <style>
+        /* Style for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: transparent;
+            padding: 20px;
+        }
+        /* Style for each grid item */
+        .grid-item {
+            text-align: center;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        /* Style for floating action button */
+        .fab {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for details box */
+        .details-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Addanki</h3>
+            <p>Major Crop: Tobacco</p>
+            <p>Retail Price: Rs. 70/kg</p>
+            <p>Current Year's Ratio: 40%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Tobacco cultivation in Addanki"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Ardhaveedu</h3>
+            <p>Major Crop: Maize</p>
+            <p>Retail Price: Rs. 40/kg</p>
+            <p>Current Year's Ratio: 25%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Maize cultivation in Ardhavedu"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Ballikurava</h3>
+            <p>Major Crop: Chilli</p>
+            <p>Retail Price: Rs. 50/kg</p>
+            <p>Current Year's Ratio: 30%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Chilli cultivation in Ballikurava"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Bestavaripeta</h3>
+            <p>Major Crop: Groundnut</p>
+            <p>Retail Price: Rs. 60/kg</p>
+            <p>Current Year's Ratio: 35%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Groundnut cultivation in Bestavaripeta"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Chebrolu</h3>
+            <p>Major Crop: Rice</p>
+            <p>Retail Price: Rs. 45/kg</p>
+            <p>Current Year's Ratio: 28%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Rice cultivation in Chebrolu"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Chimakurthi</h3>
+            <p>Major Crop: Mango</p>
+            <p>Retail Price: Rs. 55/kg</p>
+            <p>Current Year's Ratio: 32%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Mango cultivation in Chimakurthi"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Chinaganjam</h3>
+            <p>Major Crop: Coconut</p>
+            <p>Retail Price: Rs. 65/kg</p>
+            <p>Current Year's Ratio: 38%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Coconut cultivation in Chinaganjam"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Chirala</h3>
+            <p>Major Crop: Cotton</p>
+            <p>Retail Price: Rs. 75/kg</p>
+            <p>Current Year's Ratio: 42%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Cotton cultivation in Chirala"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Cumbum</h3>
+            <p>Major Crop: Tomato</p>
+            <p>Retail Price: Rs. 35/kg</p>
+            <p>Current Year's Ratio: 22%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Tomato cultivation in Cumbum"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Darsi</h3>
+            <p>Major Crop: Banana</p>
+            <p>Retail Price: Rs. 80/kg</p>
+            <p>Current Year's Ratio: 45%</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Banana cultivation in Darsi"></textarea>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript to toggle details box visibility
+        const buttons = document.querySelectorAll('.fab');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const detailsBox = button.nextElementSibling;
+                detailsBox.style.display = detailsBox.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

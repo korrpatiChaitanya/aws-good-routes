@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Madhya Pradesh</title>
+    <style>
+        /* Style for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: transparent;
+            padding: 20px;
+        }
+        /* Style for each grid item */
+        .grid-item {
+            text-align: center;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        /* Style for floating action button */
+        .fab {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for details box */
+        .details-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Bhopal</h3>
+            <p>Famous for Bhopal Mango</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Bhopal Mango cultivation in Bhopal"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Indore</h3>
+            <p>Famous for Wheat</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Wheat cultivation in Indore"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Gwalior</h3>
+            <p>Famous for Grapes</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Grape cultivation in Gwalior"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Jabalpur</h3>
+            <p>Famous for Banana</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Banana cultivation in Jabalpur"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Ujjain</h3>
+            <p>Famous for Soybean</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Soybean cultivation in Ujjain"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Ratlam</h3>
+            <p>Famous for Gram</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Gram cultivation in Ratlam"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Dewas</h3>
+            <p>Famous for Wheat</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Wheat cultivation in Dewas"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Sehore</h3>
+            <p>Famous for Soybean</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Soybean cultivation in Sehore"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Chhindwara</h3>
+            <p>Famous for Oranges</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Orange cultivation in Chhindwara"></textarea>
+            </div>
+        </div>
+        <!-- Add more districts and crops here -->
+    </div>
+    <script>
+        // JavaScript to toggle details box visibility
+        const buttons = document.querySelectorAll('.fab');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const detailsBox = button.nextElementSibling;
+                detailsBox.style.display = detailsBox.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

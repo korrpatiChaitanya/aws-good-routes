@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kurnool District</title>
+    <style>
+        /* Style for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: transparent;
+            padding: 20px;
+        }
+        /* Style for each grid item */
+        .grid-item {
+            text-align: center;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        /* Style for floating action button */
+        .fab {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for details box */
+        .details-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        /* Style for scrolling text */
+        .scroll-text {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            color: #000;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+        /* Animation for scrolling text */
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-text">Kurnool District</div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Adoni</h3>
+            <p>Major Crop: Cotton</p>
+            <p>Famous for Cotton</p>
+            <p>Seasons: Kharif</p>
+            <p>Retail Price: 5000/kg</p>
+            <p>Current Year's Ratio: 6:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Cotton cultivation in Adoni"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Allagadda</h3>
+            <p>Major Crop: Red Gram</p>
+            <p>Famous for Red Gram</p>
+            <p>Seasons: Kharif</p>
+            <p>Retail Price: 6000/kg</p>
+            <p>Current Year's Ratio: 5:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Red Gram cultivation in Allagadda"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Atmakur</h3>
+            <p>Major Crop: Groundnut</p>
+            <p>Famous for Groundnut</p>
+            <p>Seasons: Kharif</p>
+            <p>Retail Price: 4000/kg</p>
+            <p>Current Year's Ratio: 5:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Groundnut cultivation in Atmakur"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Banaganapalle</h3>
+            <p>Major Crop: Mango</p>
+            <p>Famous for Mango</p>
+            <p>Seasons: All</p>
+            <p>Retail Price: 3000/kg</p>
+            <p>Current Year's Ratio: 8:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Mango cultivation in Banaganapalle"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Bandi Atmakur</h3>
+            <p>Major Crop: Pomegranate</p>
+            <p>Famous for Pomegranate</p>
+            <p>Seasons: Kharif</p>
+            <p>Retail Price: 2500/kg</p>
+            <p>Current Year's Ratio: 6:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Pomegranate cultivation in Bandi Atmakur"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Bethamcherla</h3>
+            <p>Major Crop: Rice</p>
+            <p>Famous for Rice</p>
+            <p>Seasons: Kharif, Rabi</p>
+            <p>Retail Price: 2000/kg</p>
+            <p>Current Year's Ratio: 7:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Rice cultivation in Bethamcherla"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Chagalamarri</h3>
+            <p>Major Crop: Tomato</p>
+            <p>Famous for Tomato</p>
+            <p>Seasons: All</p>
+            <p>Retail Price: 3000/kg</p>
+            <p>Current Year's Ratio: 7:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Tomato cultivation in Chagalamarri"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Chippagiri</h3>
+            <p>Major Crop: Maize</p>
+            <p>Famous for Maize</p>
+            <p>Seasons: Kharif</p>
+            <p>Retail Price: 1800/kg</p>
+            <p>Current Year's Ratio: 6:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Maize cultivation in Chippagiri"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Cumbum</h3>
+            <p>Major Crop: Banana</p>
+            <p>Famous for Banana</p>
+            <p>Seasons: All</p>
+            <p>Retail Price: 2500/kg</p>
+            <p>Current Year's Ratio: 6:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Banana cultivation in Cumbum"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Dhone</h3>
+            <p>Major Crop: Sunflower</p>
+            <p>Famous for Sunflower</p>
+            <p>Seasons: Kharif</p>
+            <p>Retail Price: 3500/kg</p>
+            <p>Current Year's Ratio: 5:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Sunflower cultivation in Dhone"></textarea>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript to toggle details box visibility
+        const buttons = document.querySelectorAll('.fab');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const detailsBox = button.nextElementSibling;
+                detailsBox.style.display = detailsBox.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gujarat</title>
+    <style>
+        /* Style for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: transparent;
+            padding: 20px;
+        }
+        /* Style for each grid item */
+        .grid-item {
+            text-align: center;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        /* Style for floating action button */
+        .fab {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for details box */
+        .details-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Ahmedabad</h3>
+            <p>Famous for Cotton</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Cotton cultivation in Ahmedabad"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Surendranagar</h3>
+            <p>Famous for Groundnuts</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Groundnut cultivation in Surendranagar"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Vadodara</h3>
+            <p>Famous for Tobacco</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Tobacco cultivation in Vadodara"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Rajkot</h3>
+            <p>Famous for Peanuts</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Peanut cultivation in Rajkot"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Banaskantha</h3>
+            <p>Famous for Wheat</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Wheat cultivation in Banaskantha"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Junagadh</h3>
+            <p>Famous for Mangoes</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Mango cultivation in Junagadh"></textarea>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript to toggle details box visibility
+        const buttons = document.querySelectorAll('.fab');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const detailsBox = button.nextElementSibling;
+                detailsBox.style.display = detailsBox.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

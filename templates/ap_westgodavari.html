@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>West Godavari District</title>
+    <style>
+        /* Style for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: transparent;
+            padding: 20px;
+        }
+        /* Style for each grid item */
+        .grid-item {
+            text-align: center;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        /* Style for floating action button */
+        .fab {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for details box */
+        .details-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Bhimavaram</h3>
+            <p>Major Crop: Paddy</p>
+            <p>Famous for Paddy</p>
+            <p>Retail Price: 3000/kg</p>
+            <p>Current Year's Ratio: 6:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Paddy cultivation in Bhimavaram"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Eluru</h3>
+            <p>Major Crop: Sugarcane</p>
+            <p>Famous for Sugarcane</p>
+            <p>Retail Price: 2500/kg</p>
+            <p>Current Year's Ratio: 5:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Sugarcane cultivation in Eluru"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Jangareddygudem</h3>
+            <p>Major Crop: Banana</p>
+            <p>Famous for Banana</p>
+            <p>Retail Price: 2000/kg</p>
+            <p>Current Year's Ratio: 7:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Banana cultivation in Jangareddygudem"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Kovvur</h3>
+            <p>Major Crop: Coconut</p>
+            <p>Famous for Coconut</p>
+            <p>Retail Price: 1800/kg</p>
+            <p>Current Year's Ratio: 6:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Coconut cultivation in Kovvur"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Narsapur</h3>
+            <p>Major Crop: Cashew</p>
+            <p>Famous for Cashew</p>
+            <p>Retail Price: 2200/kg</p>
+            <p>Current Year's Ratio: 5:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Cashew cultivation in Narsapur"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Palakollu</h3>
+            <p>Major Crop: Mango</p>
+            <p>Famous for Mango</p>
+            <p>Retail Price: 2300/kg</p>
+            <p>Current Year's Ratio: 7:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Mango cultivation in Palakollu"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Tadepalligudem</h3>
+            <p>Major Crop: Turmeric</p>
+            <p>Famous for Turmeric</p>
+            <p>Retail Price: 2100/kg</p>
+            <p>Current Year's Ratio: 6:1</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Turmeric cultivation in Tadepalligudem"></textarea>
+            </div>
+        </div>
+        <!-- Add more grid items here -->
+    </div>
+    <script>
+        // JavaScript to toggle details box visibility
+        const buttons = document.querySelectorAll('.fab');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const detailsBox = button.nextElementSibling;
+                detailsBox.style.display = detailsBox.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

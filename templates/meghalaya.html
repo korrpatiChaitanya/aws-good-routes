@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meghalaya</title>
+    <style>
+        /* Style for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: transparent;
+            padding: 20px;
+        }
+        /* Style for each grid item */
+        .grid-item {
+            text-align: center;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        /* Style for floating action button */
+        .fab {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for details box */
+        .details-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>East Khasi Hills</h3>
+            <p>Famous for Pineapples</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Pineapple cultivation in East Khasi Hills"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>West Garo Hills</h3>
+            <p>Famous for Oranges</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Orange cultivation in West Garo Hills"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>West Khasi Hills</h3>
+            <p>Famous for Ginger</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Ginger cultivation in West Khasi Hills"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>Ri-Bhoi</h3>
+            <p>Famous for Turmeric</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Turmeric cultivation in Ri-Bhoi"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>South Garo Hills</h3>
+            <p>Famous for Betel Nuts</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Betel Nut cultivation in South Garo Hills"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h3>South West Khasi Hills</h3>
+            <p>Famous for Black Pepper</p>
+            <button class="fab">Details</button>
+            <div class="details-box">
+                <textarea placeholder="Add info about Black Pepper cultivation in South West Khasi Hills"></textarea>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript to toggle details box visibility
+        const buttons = document.querySelectorAll('.fab');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const detailsBox = button.nextElementSibling;
+                detailsBox.style.display = detailsBox.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
